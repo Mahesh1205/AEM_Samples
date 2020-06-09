@@ -1,0 +1,92 @@
+body {font-family: Arial, Helvetica, sans-serif;
+  background-color: lightgray;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 5px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 15px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button.red-btn{
+  background-color:red;
+}
+
+button.green-btn{
+  background-color: #4CAF50;
+}
+
+button.purple-btn{
+  background-color: purple;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.imgcontainer {
+  text-align: center;  
+  background: rgb(49, 47, 47);
+}
+
+.avatar {
+  width: 100px;
+  border-radius: 50%;
+}
+
+img.red-avatar {
+  content: url(https://store.playstation.com/store/api/chihiro/00_09_000/container/ZA/en/99/EP2402-CUSA05624_00-AV00000000000063/0/image?_version=00_09_000&platform=chihiro&w=330&h=330&bg_color=000000&opacity=100);
+}
+img.green-avatar {
+  content: url(https://cdn.pixabay.com/photo/2013/07/12/18/35/alien-153542_960_720.png);
+}
+img.purple-avatar {
+  content: url(https://www.iconsdb.com/icons/preview/purple/twitter-xxl.png);
+}
+
+.container {
+  padding: 10px;
+  height:400px;
+  width: 300px;
+  margin: auto;
+  /* position: absolute; 
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  background-color: black;
+}
+
+span a {
+  float: right;
+  padding-top: 2px;
+  color:#f1f1f1;
+  cursor: pointer;
+}
+
+span.remeberMe {
+  color:#f1f1f1;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}

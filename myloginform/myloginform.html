@@ -1,0 +1,26 @@
+<sly data-sly-use.clientLib= "${'/libs/granite/sightly/templates/clientlib.html'}">
+    <clientlib data-sly-call= "${clientLib.all @ categories=['my.comp']}" data-sly-unwrap/>
+</sly>
+
+
+<form > 
+  <div class="container">
+    <div class="imgcontainer">
+      <img class="avatar ${properties.color}-avatar" src="https://cdn.pixabay.com/photo/2013/07/12/18/35/alien-153542_960_720.png" alt="Avatar" >
+    </div>
+    <!-- <label for="uname" style="color:#f1f1f1"><b>${properties.name} </b></label> -->
+    <input type="text" placeholder=${properties.name} name="uname" required>
+    <!-- <label for="psw"><b style="color:#f1f1f1">${properties.password}</b></label> -->
+    <input type="password" placeholder=${properties.password} name="psw" required>
+        
+    <button id='btnLogin' type="submit" class='${properties.color}-btn'>Login</button>
+
+    <div>
+      <input type="checkbox" checked="checked"  style="color:#f1f1f1" name="remember"> 
+      <span class="remeberMe"> Remember me</span> 
+      <span class="psw"> <a href="#">Forgot password?</a></span>
+    </div>
+
+  </div>
+
+</form>
