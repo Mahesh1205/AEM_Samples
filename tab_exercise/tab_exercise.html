@@ -1,0 +1,12 @@
+
+<div> <h1>Click me for Tab Exercise </h1></div>
+
+<hr>
+
+<div data-sly-use.nodeData ="read_node.js" style="margin:auto;">
+  <h1>Reading Node values Exercise</h1>
+  ${nodeData.Color}
+ <div><strong>${nodeData.ResourcePath.propName}</strong>: ${nodeData.ResourcePath.propValue}</div>
+<div><strong>${nodeData.Color.propName}</strong>: ${nodeData.Color.propValue}</div>
+<div><strong>${nodeData.HType.propName}</strong>: ${nodeData.HType.propValue}</div>
+</div>
