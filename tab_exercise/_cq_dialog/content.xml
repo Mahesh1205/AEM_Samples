@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" 
+    xmlns:cq="http://www.day.com/jcr/cq/1.0" 
+    xmlns:jcr="http://www.jcp.org/jcr/1.0" 
+    xmlns:granite="http://www.adobe.com/jcr/granite/1.0"
+    xmlns:nt="http://www.jcp.org/jcr/nt/1.0" jcr:primaryType="nt:unstructured" jcr:title="Show hide tab exercies" sling:resourceType="cq/gui/components/authoring/dialog" mode="edit" helpPath="style-guide.html#compare-rows-services" extraClientlibs="[comp.training]">
+    <content granite:class='tabtest' jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/tabs">
+        <items jcr:primaryType="nt:unstructured">
+            <tab1 jcr:primaryType="nt:unstructured" jcr:title="Tab One" sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <radiogroupA jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/foundation/form/radiogroup" fieldLabel="No validation">
+                        <items jcr:primaryType="nt:unstructured">
+                            <option1 jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/foundation/form/radio" name="./radiogroupA" text="Tab Two" value="Tab Two"/>
+                            <option2 jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/foundation/form/radio" name="./radiogroupA" text="Tab Three" value="Tab Three"/>
+                        </items>
+                    </radiogroupA>
+                    <imagePath
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Add Image Path"
+                        message="Hello"
+                        name="./image1"
+                        granite:id='myid' />
+                </items>
+            </tab1>
+            <tab2 jcr:primaryType="nt:unstructured" jcr:title="Tab Two" granite:id="tab2" sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <label jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/form/textarea" fieldLabel="Tab two item" name="./label2"/>
+                </items>
+
+            </tab2>
+            <tab3 jcr:primaryType="nt:unstructured" jcr:title="Tab Three"  sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <label jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/form/textarea" fieldLabel="Tab 3 item" name="./label3"/>
+                </items>
+            </tab3>
+        </items>
+    </content>
+</jcr:root>
